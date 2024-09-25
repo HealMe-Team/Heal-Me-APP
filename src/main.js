@@ -1,0 +1,20 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import i18n from './i18n';
+import PrimeVue from 'primevue/config';
+import router from './router';
+import SelectButton from 'primevue/selectbutton';
+import Dialog from 'primevue/dialog';
+import Button from 'primevue/button';
+import Aura from '@primevue/themes/aura';
+import 'primeicons/primeicons.css';
+import './assets/main.css';
+
+const app = createApp(App);
+app.use(i18n);
+app.use(router);
+app.use(PrimeVue, { ripple: true });
+app.component('SelectButton', SelectButton);
+app.component('Dialog', Dialog);
+app.component('Button', Button);
+app.mount('#app');
