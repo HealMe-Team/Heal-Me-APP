@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base:'https://HealMe-Team.github.io/Heal-Me-APP/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
